@@ -70,21 +70,17 @@ fn main() -> Result<(), io::Error> {
             let gyr = to_datasets(&gyr).to_vec();
             let mag = to_datasets(&mag).to_vec();
             let chart_acc = Chart::new(acc)
-                .block(
-                    Block::default()
-                        .borders(Borders::ALL)
-                        .title("Accelerometer"),
-                )
+                .block(Block::default().borders(Borders::ALL).title("Acc"))
                 .x_axis(Axis::default().bounds([0.0, 128.0]))
                 .y_axis(Axis::default().bounds([-5.0, 5.0]));
             f.render_widget(chart_acc, chunks[0]);
             let chart_gyr = Chart::new(gyr)
-                .block(Block::default().borders(Borders::ALL).title("Gyroscope"))
+                .block(Block::default().borders(Borders::ALL).title("Gyr"))
                 .x_axis(Axis::default().bounds([0.0, 128.0]))
                 .y_axis(Axis::default().bounds([-720.0, 720.0]));
             f.render_widget(chart_gyr, chunks[1]);
             let chart_mag = Chart::new(mag)
-                .block(Block::default().borders(Borders::ALL).title("Magnetometer"))
+                .block(Block::default().borders(Borders::ALL).title("Mag"))
                 .x_axis(Axis::default().bounds([0.0, 128.0]))
                 .y_axis(Axis::default().bounds([-200.0, 200.0]));
             f.render_widget(chart_mag, chunks[2]);
