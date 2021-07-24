@@ -1,0 +1,13 @@
+[package]
+name = "rust_nano_imu"
+version = "0.1.0"
+authors = ["Hristo Filaretov <h.filaretov@campus.tu-berlin.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serialport = "4.0.1"
+tui = "0.15"
+termion = "1.5"
+ringbuffer = "0.7.1"
