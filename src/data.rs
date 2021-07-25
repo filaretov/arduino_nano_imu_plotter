@@ -1,6 +1,6 @@
 use ringbuffer::{AllocRingBuffer, RingBufferExt, RingBufferWrite};
 
-const N_VALUES: usize = 128;
+const N_VALUES: usize = 256;
 
 pub struct DataQueue {
     x: AllocRingBuffer<f64>,
