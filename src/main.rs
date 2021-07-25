@@ -83,7 +83,7 @@ fn main() -> Result<(), io::Error> {
                 ]));
             f.render_widget(chart_acc, chunks[0]);
             let chart_gyr = Chart::new(gyr)
-                .block(Block::default().borders(Borders::ALL).title("Gyr [deg]"))
+                .block(Block::default().borders(Borders::ALL).title("Gyr [deg/s]"))
                 .x_axis(Axis::default().bounds([0.0, X_LIM]))
                 .y_axis(Axis::default().bounds([-720.0, 720.0]).labels(vec![
                     Span::raw("-720"),
