@@ -31,8 +31,8 @@ fn to_dataset(data: &Vec<(f64, f64)>, color: Color) -> Dataset {
 fn to_datasets(datasets: &[Vec<(f64, f64)>; 3]) -> Vec<Dataset> {
     vec![
         to_dataset(&datasets[0], Color::Red),
-        to_dataset(&datasets[1], Color::Blue),
-        to_dataset(&datasets[2], Color::Green),
+        to_dataset(&datasets[1], Color::Green),
+        to_dataset(&datasets[2], Color::Blue),
     ]
 }
 
