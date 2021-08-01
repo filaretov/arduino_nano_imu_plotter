@@ -92,7 +92,7 @@ fn main() -> Result<(), io::Error> {
                 ]));
             f.render_widget(chart_gyr, chunks[1]);
             let chart_mag = Chart::new(mag)
-                .block(Block::default().borders(Borders::ALL).title("Mag [uT]"))
+                .block(Block::default().borders(Borders::ALL).title("Mag [G]"))
                 .x_axis(Axis::default().bounds([0.0, X_LIM]))
                 .y_axis(Axis::default().bounds([-500.0, 500.0]).labels(vec![
                     Span::raw("-500"),

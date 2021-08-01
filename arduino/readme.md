@@ -1,1 +1,1 @@
-Ok, so the magnetometer is super decalibrated. Calibrate that first if you want to do anything else.
+Some of the coordinate systems are right-handed, others are left-handed. What a pleasant surprise.
